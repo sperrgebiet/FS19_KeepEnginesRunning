@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="42">
+
+    <author>sperrgebiet</author>
+
+    <version>0.9.0.1</version>
+
+    <title>
+        <de>Lauf Motor, lauf</de>
+		<en>Run Engine Run</en>
+	</title>
+
+	<iconFilename>store.dds</iconFilename>
+	
+	<multiplayer supported="false"/>
+    
+	<description>
+        <de>
+			<![CDATA[Hiermit können die Ballen angepasst werden in Volumen von 1500, 2000, 4000, 6000, 8000, 10000. 
+			ACHTUNG: Die Größe der Ballen ändert sich dabei nicht!
+			
+			Credits: FS17 Version: Ziuta // 50keda // UnknownModder
+			]]>
+        </de>
+		<en>
+			<![CDATA[This allows the bales to be adjusted in volume of 4000,6000,8000. CAUTION: The size of the bales does not change!
+			
+			Credits: FS17 Version: Ziuta // 50keda // UnknownModder
+			]]>
+		</en>
+    </description>
+	
+	<extraSourceFiles>
+		<sourceFile filename="RegisterSpecialization.lua" />
+	</extraSourceFiles>
+
+	<registerSpecializations debugPriority="0">
+		<registerSpecialization name="runEngineRun" className="runEngine" filename="runEngineRun.lua" searchedSpecializations="Motorized"/>
+	</registerSpecializations>
+
+</modDesc>
